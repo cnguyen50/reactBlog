@@ -31,6 +31,16 @@ const IndexScreen = ({ navigation }) => {
   )
 };
 
+IndexScreen.navigationOptions = ({ navigation }) => {
+  return {
+    headerRight: () => (
+      <TouchableOpacity onPress={() => navigation.navigate('Create')}>
+        <Feather name="plus" size={35} />
+      </TouchableOpacity>
+    ),
+  }
+};
+
 
 const styles = StyleSheet.create({
   row: {
@@ -48,6 +58,5 @@ const styles = StyleSheet.create({
     fontSize: 24
   }
 });
-
 
 export default IndexScreen
