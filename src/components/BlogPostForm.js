@@ -20,7 +20,7 @@ const BlogPostForm = () => {
         onChangeText={text => setContent(text)} />
 
       <Button 
-        title="Add Blog Post"
+        title="Save Blog Post"
       />
     </View>
   )

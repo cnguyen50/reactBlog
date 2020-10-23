@@ -1,11 +1,12 @@
-import React, { useContext, useState } from 'react'
-import { View, Text, StyleSheet, TextInput, Button } from 'react-native'
+import React, { useContext } from 'react'
+import { StyleSheet } from 'react-native'
 import { Context } from '../context/BlogContext'
-import { State } from 'react-native-gesture-handler'
+import BlogPostFrom from '../components/BlogPostForm'
 
 const CreateScreen = ({ navigation }) => {
   const { addBlogPost } = useContext(Context)
 
+  return <BlogPostFrom />
 }
 
 
